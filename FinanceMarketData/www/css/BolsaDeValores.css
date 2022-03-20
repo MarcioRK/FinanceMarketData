@@ -19,4 +19,22 @@
     height: 37px;
 }
 
-#DadosResposta {}
+#DadosResposta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+#DadosResposta h6 {
+    width: fit-content;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 9px;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+#txtRespostaAumento {
+    color: #2AB227;
+}

@@ -1,0 +1,38 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 8em;
+    text-align: center;
+}
+
+.pageHeaderBackground {
+    background-color: #453E3E;
+    height: 100vh;
+}
+
+#Tela {
+    height: 100%;
+}
+
+#Titulo {
+    font-family: Red Hat Text;
+    color: white;
+    font-size: 36px;
+    padding-top: 1.4em;
+    font-weight: 400;
+    
+}
+
+#Conteudo {
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    flex-grow: 1;
+}
+
+#nav{
+    height: 5vh;
+}

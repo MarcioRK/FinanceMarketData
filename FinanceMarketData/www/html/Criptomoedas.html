@@ -16,9 +16,15 @@
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
 
     <link rel="stylesheet" href="../assets/jquery.mobile.structure-1.4.5.min.css">
-    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../assets/jquery.mobile.icons.min.css">
     <link rel="stylesheet" href="../assets/theme.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/Criptomoedas.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet">
 
     <script src="../js/index.js"></script>
     <script src="../assets/jquery-1.11.1.min.js"></script>
@@ -28,18 +34,51 @@
 </head>
 
 <body>
-    <div data-role="page" id="pageHome">
-        <div data-role="header" id="header">
-            <h1>Criptomoedas</h1>
-        </div>
+    <div data-role="page" id="pageHome" class="pageHeaderBackground">
+        <div id="Tela" class="flex-container">
+            <header>
+                <h1 id="Titulo">Criptomoedas</h1>
+            </header>
+            <div id="Conteudo">
+                <div>
+                    <p id="topCriptoLabel">Destaques</p>
+                    <div class="topCriptosLayout">
+                        <h6>Bitcoin</h6>
+                        <h6 id="txtValueBitcoin" class="criptoValue">R$ 396.435</h6>
+                    </div>
+                    <div class="topCriptosLayout">
+                        <h6>Ethereum</h6>
+                        <h6 id="txtValueEthereum" class="criptoValue">R$ 396.435</h6>
+                    </div>
+                    <div class="topCriptosLayout">
+                        <h6>Bnb</h6>
+                        <h6 id="txtValueBnbclass=" criptoValue ">R$ 396.435</h6>
+                    </div>
+                    <div class="topCriptosLayout ">
+                        <h6>Dogecoin</h6>
+                        <h6 id="txtValueDogecoin "class="criptoValue ">R$ 396.435</h6>
+                    </div>
+                    <div class="topCriptosLayout ">
+                        <h6>Bcoin</h6>
+                        <h6 id="txtValueBcoin "class="criptoValue ">R$ 396.435</h6>
+                    </div>
 
+                </div>
+
+                <hr class="criptoLine ">
+                <form id="formAcao ">
+                    <input id="inputAcao ">
+                    <button id="btnAcao ">#</button>
+                </form>
+            </div>
+        </div>
 
         <!-- NavBar -->
         <div data-role="footer" style="overflow:hidden;" data-position="fixed">
-            <div data-role="navbar">
+            <div data-role="navbar" id="nav">
                 <ul>
                     <li>
-                        <a href="Criptomoedas.html" data-transition="slidefade" class="ui-btn-active">
+                        <a href="Criptomoedas.html" data-transition="slidefade" data-direction="reverse">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-bitcoin" viewBox="0 0 16 16">
                                 <path d="M5.5 13v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.5v1.25c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25V13h.084c1.992 0 3.416-1.033 3.416-2.82 0-1.502-1.007-2.323-2.186-2.44v-.088c.97-.242 1.683-.974 1.683-2.19C11.997 3.93 10.847 3 9.092 3H9V1.75a.25.25 0 0 0-.25-.25h-1a.25.25 0 0 0-.25.25V3h-.573V1.75a.25.25 0 0 0-.25-.25H5.75a.25.25 0 0 0-.25.25V3l-1.998.011a.25.25 0 0 0-.25.25v.989c0 .137.11.25.248.25l.755-.005a.75.75 0 0 1 .745.75v5.505a.75.75 0 0 1-.75.75l-.748.011a.25.25 0 0 0-.25.25v1c0 .138.112.25.25.25L5.5 13zm1.427-8.513h1.719c.906 0 1.438.498 1.438 1.312 0 .871-.575 1.362-1.877 1.362h-1.28V4.487zm0 4.051h1.84c1.137 0 1.756.58 1.756 1.524 0 .953-.626 1.45-2.158 1.45H6.927V8.539z"/>
                             </svg>
@@ -53,7 +92,7 @@
                     </li>
 
                     <li>
-                        <a href="BolsaDeValores.html" data-transition="slidefade">
+                        <a href="BolsaDeValores.html" data-transition="slidefade" class="ui-btn-active">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bank2" viewBox="0 0 16 16">
                                 <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z" />
                             </svg>
@@ -112,7 +151,8 @@
         </div>
     </div>
 
-    <!-- <script src="cordova.js"></script> -->
+
+   <!-- <script src="cordova.js "></script> -->
 </body>
 
 </html>

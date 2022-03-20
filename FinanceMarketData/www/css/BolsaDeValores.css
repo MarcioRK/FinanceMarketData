@@ -1,0 +1,22 @@
+#formAcao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+#btnAcao {
+    width: 43px;
+    height: 37px;
+    border-style: none;
+    background-color: #453E3E;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+
+#inputAcao {
+    width: 220px;
+    height: 37px;
+}
+
+#DadosResposta {}

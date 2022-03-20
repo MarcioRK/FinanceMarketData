@@ -1,4 +1,5 @@
 #topCriptoLabel {
+    font-family: 'Red Hat Text', sans-serif;
     text-align: center;
     margin-top: 39px;
     margin-bottom: 12px;
@@ -7,4 +8,28 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
+}
+
+.topCriptosLayout {
+    font-family: 'Red Hat Text', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 38px;
+    margin-right: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.criptoValue {
+    color: #2AB227;
+}
+
+.criptoLine {
+    margin-top: 25px;
+    margin-left: 41px;
+    margin-right: 41px;
+    margin-bottom: 36px;
+    border: 0.2px solid #000000
 }

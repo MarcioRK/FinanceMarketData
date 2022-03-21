@@ -435,8 +435,8 @@ html .ui-bar-a .ui-slider-track .ui-btn-active,
 html .ui-body-a .ui-slider-track .ui-btn-active,
 html body .ui-group-theme-a .ui-slider-track .ui-btn-active,
 html body div.ui-slider-track.ui-body-a .ui-btn-active {
-	background-color: #505050;
-	border-color: #505050;
+	background-color: #453E3E;
+	border-color: #453E3E;
 	color: #ffffff;
 	text-shadow: 0 1px 0 #005599;
 }

@@ -33,7 +33,7 @@
     <title>Finance Market Data</title>
 </head>
 
-<body>
+<body onload="getMainCriptos()">
     <div data-role="page" id="pageHome" class="pageHeaderBackground">
         <div id="Tela" class="flex-container">
             <header>
@@ -44,37 +44,32 @@
                     <p id="topCriptoLabel">Destaques</p>
                     <div class="topCriptosLayout">
                         <h6>Bitcoin</h6>
-                        <h6 id="txtValueBitcoin" class="criptoValue">R$ 396.435</h6>
+                        <h6 id="txtValueBitcoin" class="criptoValue"></h6>
                     </div>
                     <div class="topCriptosLayout">
                         <h6>Ethereum</h6>
-                        <h6 id="txtValueEthereum" class="criptoValue">R$ 396.435</h6>
+                        <h6 id="txtValueEthereum" class="criptoValue"></h6>
                     </div>
                     <div class="topCriptosLayout">
                         <h6>Bnb</h6>
-                        <h6 id="txtValueBnb" class="criptoValue">R$ 396.435</h6>
+                        <h6 id="txtValueBnb" class="criptoValue"></h6>
                     </div>
                     <div class="topCriptosLayout">
                         <h6>Dogecoin</h6>
-                        <h6 id="txtValueDogecoin" class="criptoValue">R$ 396.435</h6>
+                        <h6 id="txtValueDogecoin" class="criptoValue"></h6>
                     </div>
-                    <div class="topCriptosLayout">
-                        <h6>Bcoin</h6>
-                        <h6 id="txtValueBcoin "class="criptoValue ">R$ 396.435</h6>
-                    </div>
-
                 </div>
 
                 <hr class="criptoLine">
 
                 <div id="criptoSearch">
                     <input id="txtSearchCripto">
-                    <button id="btnSearchCripto" value="Submit" onclick="getStock()">#</button>
+                    <button id="btnSearchCripto" value="Submit" onclick="searchForCripto()">#</button>
                 </div>
                 <div id="criptoResult">
-                    <h6 id="txtCriptoName">Teste</h6>
-                    <h6 id="txtCriptoValue">Teste</h6>
-                    <h6 id="txtCriptoVariation">Teste</h6>
+                    <h6 id="txtCriptoName"></h6>
+                    <h6 id="txtCriptoValue"></h6>
+                    <h6 id="txtCriptoVariation"></h6>
                 </div>
                 
             </div>
@@ -144,7 +139,7 @@
                 </div>
             </div>
 
-   <!-- <script src="cordova.js "></script> -->
+   <script src="../js/Cripto.js"></script>
 </body>
 
 </html>

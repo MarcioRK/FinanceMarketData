@@ -1,7 +1,6 @@
 function getProvinceCountryList()
 {
     select = document.getElementById('cboEstadosPaises');
-    select.disabled = true;
 
     var url = 'https://coronavirus.m.pipedream.net/';
     var request = new XMLHttpRequest();
@@ -9,7 +8,7 @@ function getProvinceCountryList()
     request.send();
     request.onload = function(){
         if (request.status === 200){
-            select.disabled = false;
+            select.options[0].innerHTML = "Selecione a Provícia - País"
             var responseJson = JSON.parse(request.response);
             for (var i = 0; i<=responseJson.rawData.length; i++){
                 try {

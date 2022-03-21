@@ -20,7 +20,7 @@
     height: 37px;
 }
 
-.DadosCovide{
+.DadosCovid{
     font-family: 'Red Hat Text', sans-serif;
     display: flex;
     justify-content: space-between;
@@ -30,4 +30,9 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
+}
+
+
+.CorResultadosCovid{
+    color: red
 }

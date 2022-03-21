@@ -24,6 +24,7 @@
 
 
     <script src="../js/index.js"></script>
+    <script src="../js/Covid.js"></script>
     <script src="../assets/jquery-1.11.1.min.js"></script>
     <script src="../assets/jquery.mobile-1.4.5.min.js"></script>
 
@@ -42,37 +43,28 @@
             </header>
             <div id="Conteudo">
                 <div id="BuscarPaisCovid">
-                    <input id="txtPaisCovid">
-                    <button id="btnBuscarPaisCovid" value="Submit" o>#</button>
+                    <!-- <input id="txtPaisCovid"> -->
+                    <select id="cboEstadosPaises">
+                        <option value="" disabled selected>Selecione Província - País</option>
+                    </select>
+                    <button id="btnBuscarPaisCovid" value="Submit" onclick="getCovidDataBasedOnCountry()">#</button>
                 </div>
                 <div id="RespostaPaisCovid">
-                    <div class="DadosCovide">
+                    <div class="DadosCovid">
                         <h6>Casos Totais</h6>
-                        <label id="txtCasosTotais">#</label>
+                        <label id="txtCasosTotais" class="CorResultadosCovid"></label>
                     </div>
-                    <div class="DadosCovide">
-                        <h6>Novos Casos</h6>
-                        <label id="DadosCovide" >#</label>
+                    <div class="DadosCovid">
+                        <h6>Total de Óbitos</h6>
+                        <label id="txtTotalObito" class="CorResultadosCovid"></label>
                     </div>
-                    <div class="DadosCovide">
-                        <h6>Total de obitos</h6>
-                        <label id="txtTotalObito" >#</label>
+                    <div class="DadosCovid">
+                        <h6>Taxa de Incidência</h6>
+                        <label id="txtTaxaIncidencia" class="CorResultadosCovid"></label>
                     </div>
-                    <div class="DadosCovide">
-                        <h6>Obitos hoje</h6>
-                        <label id="txtObitosHoje" >#</label>
-                    </div>
-                    <div class="DadosCovide">
-                        <h6>% população 1 dose</h6>
-                        <label id="txtPopulacao1Dose" >#</label>
-                    </div>
-                    <div class="DadosCovide">
-                        <h6>% população 2 doses</h6>
-                        <label id="txtPopulacao2Dose">#</label>
-                    </div>
-                    <div class="DadosCovide">
-                        <h6>% ciclo vacinal completo</h6>
-                        <label id="txtPopulacaoImunizada">#</label>
+                    <div class="DadosCovid">
+                        <h6>Taxa de Óbito</h6>
+                        <label id="txtTaxaObito" class="CorResultadosCovid"></label>
                     </div>
                 </div>
             </div>

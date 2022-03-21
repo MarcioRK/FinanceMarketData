@@ -26,7 +26,7 @@
     margin-top: 40px;
 }
 
-#DadosResposta h6 {
+#DadosResposta h5 {
     width: fit-content;
     align-self: center;
     margin: 0;
@@ -35,6 +35,3 @@
     font-family: 'Red Hat Text', sans-serif;
 }
 
-#txtRespostaAumento {
-    color: #2AB227;
-}

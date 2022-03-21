@@ -33,3 +33,39 @@
     margin-bottom: 36px;
     border: 0.2px solid #000000
 }
+
+#criptoSearch{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 3em;
+}
+
+#btnSearchCripto {
+    width: 43px;
+    height: 37px;
+    border-style: none;
+    background-color: #453E3E;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+
+#criptoResult {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+#criptoResult h6 {
+    width: fit-content;
+    align-self: center;
+    margin: 0;
+    margin-bottom: 12px;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 24px;
+}
+
+#txtCriptoVariation {
+    color: #2AB227;
+}

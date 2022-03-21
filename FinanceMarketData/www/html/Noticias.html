@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../assets/jquery.mobile.icons.min.css">
     <link rel="stylesheet" href="../assets/theme.min.css">
 
+    <script src="../js/index.js"></script>
     <script src="../assets/jquery-1.11.1.min.js"></script>
     <script src="../assets/jquery.mobile-1.4.5.min.js"></script>
     <script src="../js/Noticias.js"></script>
@@ -88,7 +89,7 @@
             <div data-role="navbar">
                 <ul>
                     <li>
-                        <a href="Criptomoedas.html" data-transition="slidefade" data-direction="reverse">
+                        <a onclick="rediricionarCripto()" data-transition="slidefade" data-direction="reverse">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-currency-bitcoin" viewBox="0 0 16 16">
                                 <path
@@ -104,7 +105,7 @@
                     </li>
 
                     <li>
-                        <a href="BolsaDeValores.html" data-transition="slidefade" data-direction="reverse">
+                        <a onclick="rediricionarBolsa()">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-bank2" viewBox="0 0 16 16">
                                 <path
@@ -119,7 +120,7 @@
                     </li>
 
                     <li>
-                        <a data-transition="slidefade" href="../index.html" class="bi bi-bank" data-direction="reverse">
+                        <a onclick="rediricionarMenu()">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-house-door-fill" viewBox="0 0 16 16">
                                 <path
@@ -135,7 +136,7 @@
                     </li>
 
                     <li>
-                        <a href="Noticias.html" data-transition="slidefade" class="ui-btn-active">
+                        <a onclick="rediricionarNoticia()">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-newspaper" viewBox="0 0 16 16">
                                 <path
@@ -153,7 +154,7 @@
                     </li>
 
                     <li>
-                        <a href="Coronavirus.html" data-transition="slidefade">
+                        <a onclick="rediricionarCorona()">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-bandaid-fill" viewBox="0 0 16 16">
                                 <path

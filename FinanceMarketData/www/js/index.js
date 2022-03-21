@@ -19,11 +19,45 @@
 
 // Wait for the deviceready event before using any of Cordova's device APIs.
 // See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
-document.addEventListener('deviceready', onDeviceReady, false);
 
-function onDeviceReady() {
-    // Cordova is now initialized. Have fun!
 
-    console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
-    document.getElementById('deviceready').classList.add('ready');
+function rediricionarCripto(){
+    window.location.href = "Criptomoedas.html";
+}
+
+function rediricionarMenu(){
+    window.location.href = "../index.html";
+}
+
+function rediricionarBolsa(){
+    window.location.href = "BolsaDeValores.html";
+}
+
+function rediricionarNoticia(){
+    window.location.href = "Noticias.html";
+}
+
+function rediricionarCorona(){
+    window.location.href = "Coronavirus.html";
+}
+
+
+function rediricionarCripto2(){
+    window.location.href = "html/Criptomoedas.html";
+}
+
+function rediricionarMenu2(){
+    window.location.href = "index.html";
+}
+
+function rediricionarBolsa2(){
+    window.location.href = "html/BolsaDeValores.html";
+}
+
+function rediricionarNoticia2(){
+    window.location.href = "html/Noticias.html";
+}
+
+function rediricionarCorona2(){
+    window.location.href = "html/Coronavirus.html";
 }

@@ -9,11 +9,6 @@ $.ajax({
     dataType: 'jsonp',
     success: function(json) {
 
-        var txtBtc = document.getElementById('txtValueBitcoin') 
-        var txtEth = document.getElementById('txtValueEthereum')
-        var txtBnb = document.getElementById('txtValueBnb')
-        var txtDogecoin = document.getElementById('txtValueDogecoin')
-
         document.getElementById('txtValueBitcoin').innerText = "R$"+json.rates.BTC
         document.getElementById('txtValueEthereum').innerText = "R$"+json.rates.ETH
         document.getElementById('txtValueBnb').innerText = "R$"+json.rates.BNB

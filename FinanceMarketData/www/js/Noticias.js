@@ -72,6 +72,6 @@ function teste(){
 }
 
 window.onload = function(){
-    getNews();
+    //getNews();
     //teste();
 }

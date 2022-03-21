@@ -10,10 +10,11 @@ header {
 
 .pageHeaderBackground {
     background-color: #453E3E;
+    height: 100vh;
 }
 
 #Tela {
-    height: 100vh;
+    height: 100%;
 }
 
 #Titulo {
@@ -22,6 +23,7 @@ header {
     font-size: 36px;
     padding-top: 1.4em;
     font-weight: 400;
+    
 }
 
 #Conteudo {
@@ -29,4 +31,8 @@ header {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     flex-grow: 1;
+}
+
+#nav{
+    height: 5vh;
 }

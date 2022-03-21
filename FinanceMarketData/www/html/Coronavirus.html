@@ -19,18 +19,63 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../assets/jquery.mobile.icons.min.css">
     <link rel="stylesheet" href="../assets/theme.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/CoronaVirus.css">
+
 
     <script src="../js/index.js"></script>
     <script src="../assets/jquery-1.11.1.min.js"></script>
     <script src="../assets/jquery.mobile-1.4.5.min.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet">
+
     <title>Finance Market Data</title>
 </head>
 
 <body>
-    <div data-role="page" id="pageHome">
-        <div data-role="header" id="header">
-            <h1>Coronavirus</h1>
+    <div data-role="page" class="pageHeaderBackground">
+        <div id="Tela" class="flex-container">
+            <header>
+                <h1 id="Titulo">Corona Vírus</h1>
+            </header>
+            <div id="Conteudo">
+                <div id="BuscarPaisCovid">
+                    <input id="txtPaisCovid">
+                    <button id="btnBuscarPaisCovid" value="Submit" o>#</button>
+                </div>
+                <div id="RespostaPaisCovid">
+                    <div class="DadosCovide">
+                        <h6>Casos Totais</h6>
+                        <label id="txtCasosTotais">#</label>
+                    </div>
+                    <div class="DadosCovide">
+                        <h6>Novos Casos</h6>
+                        <label id="DadosCovide" >#</label>
+                    </div>
+                    <div class="DadosCovide">
+                        <h6>Total de obitos</h6>
+                        <label id="txtTotalObito" >#</label>
+                    </div>
+                    <div class="DadosCovide">
+                        <h6>Obitos hoje</h6>
+                        <label id="txtObitosHoje" >#</label>
+                    </div>
+                    <div class="DadosCovide">
+                        <h6>% população 1 dose</h6>
+                        <label id="txtPopulacao1Dose" >#</label>
+                    </div>
+                    <div class="DadosCovide">
+                        <h6>% população 2 doses</h6>
+                        <label id="txtPopulacao2Dose">#</label>
+                    </div>
+                    <div class="DadosCovide">
+                        <h6>% ciclo vacinal completo</h6>
+                        <label id="txtPopulacaoImunizada">#</label>
+                    </div>
+                </div>
+            </div>
         </div>
 
 

@@ -72,6 +72,7 @@ function teste(){
 }
 
 window.onload = function(){
+    console.log('onLoad Noticias');
     //getNews();
     //teste();
 }

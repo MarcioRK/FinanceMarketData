@@ -31,6 +31,8 @@ header {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     flex-grow: 1;
+    overflow: auto;
+    height: calc(100% - 20%);
 }
 
 #nav{

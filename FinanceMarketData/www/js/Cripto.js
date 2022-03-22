@@ -4,11 +4,20 @@ function getMainCriptos(){
     target = 'BRL'
     access_key = '7c85b4e91e2ee9c69ed4de29f7dc13ad';
 
-$.ajax({
-    url: 'http://api.coinlayer.com/api/' + endpoint + '?access_key=' + access_key + '&symbols=' + symbols + '&target=' +target,    
-    dataType: 'jsonp',
-    success: function(json) {
+    api_url = 'http://api.coinlayer.com/api/' + endpoint + '?access_key=' + access_key + '&symbols=' + symbols + '&target=' + target
 
+    const paramsObject = {
+        url: api_url,
+      };
+      
+    const url_proxy = new URL('https://api.allorigins.win/get');
+    url_proxy.search = new URLSearchParams(paramsObject).toString();
+
+$.ajax({
+    url: url_proxy,    
+    dataType: 'jsonp',
+    success: function(json_without_format) {
+        var json = JSON.parse(json_without_format.contents);
         document.getElementById('txtValueBitcoin').innerText = "R$"+json.rates.BTC
         document.getElementById('txtValueEthereum').innerText = "R$"+json.rates.ETH
         document.getElementById('txtValueBnb').innerText = "R$"+json.rates.BNB
@@ -30,12 +39,20 @@ function searchForCripto(){
     target = 'BRL';
     access_key = '7c85b4e91e2ee9c69ed4de29f7dc13ad';
 
+    api_url = 'http://api.coinlayer.com/api/' + endpoint + '?access_key=' + access_key + '&symbols=' + cripto + '&target=' +target
+    const paramsObject = {
+        url: api_url,
+      };
+      
+    const url_proxy = new URL('https://api.allorigins.win/get');
+    url_proxy.search = new URLSearchParams(paramsObject).toString();
+
 $.ajax({
-    url: 'http://api.coinlayer.com/api/' + endpoint + '?access_key=' + access_key + '&symbols=' + cripto + '&target=' +target,    
+    url: url_proxy,    
     dataType: 'jsonp',
-    success: function(json) {
+    success: function(json_without_format) {
 
-
+        var json = JSON.parse(json_without_format.contents);
         document.getElementById('txtCriptoName').innerText = cripto;
         document.getElementById('txtCriptoValue').innerText = "R$ "+ json.rates[cripto];
         

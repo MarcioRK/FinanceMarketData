@@ -1,7 +1,7 @@
 function getNews(){
     //debugger
     var accessKey = '70c98bd0229f9ae406d832b2972cc1ec';
-    var url = 'http://api.mediastack.com/v1/news?access_key=' + accessKey + '&languages=en,pt&limit=15';
+    var url = 'http://api.mediastack.com/v1/news?access_key=' + accessKey + '&sources=business&languages=en,pt&limit=15';
     var request = new XMLHttpRequest();
     var htmlText = '';
 

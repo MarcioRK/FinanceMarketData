@@ -44,35 +44,8 @@ function getNews(){
     }
 }
 
-function teste(){
-    var div = document.createElement("div");
-    var element = document.getElementById("idDivTeste");
-
-    var htmlText = '';
-
-    for(var i = 1 ; i < 10 ; i++){
-        htmlText += '<div>' +
-            '<p> teste </p>' +
-            '<a href="https://www.google.com"> </a>' +
-        '</div>';
-    }
-
-
-    div.innerHTML = htmlText;
-
-    // div.innerHTML =
-    //     '<div class="slideshow-container">\n' +
-    //     '<div class="mySlides fade">\n' +
-    //     '<div class="numbertext">1 / 3</div>\n' +
-    //     '<img href="https://www.google.com/imgres?imgurl=https%3A%2F%2Flh3.googleusercontent.com%2FjUoaTIlBn5ibfQcND2n5OMD6Z7xoqNj-ShHlFR6QuLffLXD5pS8V2eNg1rGlrsRrnDkoQ28O8UHzqzBQKAGY4l1CS2NQSq2SkRScK6FOjl82jppyohK-&imgrefurl=https%3A%2F%2Fabout.google%2Fintl%2Fpt-BR%2Fproducts%2F&tbnid=JmnZ4ZR7mG7ynM&vet=12ahUKEwiRxKa8ztX2AhXmOLkGHUIHAqgQMygCegUIARDbAQ..i&docid=67HnV3vMjLT6nM&w=396&h=512&q=google&client=opera-gx&ved=2ahUKEwiRxKa8ztX2AhXmOLkGHUIHAqgQMygCegUIARDbAQ" style="width:100%">\n' +
-    //     '<div class="text">Caption Text</div>\n' +
-    //     '</div>\n';
-
-    element.appendChild(div);
-}
 
 window.onload = function(){
     console.log('onLoad Noticias');
     //getNews();
-    //teste();
 }

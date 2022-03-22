@@ -47,5 +47,5 @@ function getNews(){
 
 window.onload = function(){
     console.log('onLoad Noticias');
-    //getNews();
+    getNews();
 }

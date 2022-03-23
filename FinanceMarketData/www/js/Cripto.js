@@ -2,7 +2,7 @@ function getMainCriptos(){
     endpoint = 'live'
     symbols = 'BTC,ETH,BNB,DOGE'
     target = 'BRL'
-    access_key = '7c85b4e91e2ee9c69ed4de29f7dc13ad';
+    access_key = 'ee74e99b578f799d5c9a96e3618326dc';
 
     api_url = 'http://api.coinlayer.com/api/' + endpoint + '?access_key=' + access_key + '&symbols=' + symbols + '&target=' + target
 
@@ -37,7 +37,7 @@ function searchForCripto(){
     
     endpoint = 'live';
     target = 'BRL';
-    access_key = '7c85b4e91e2ee9c69ed4de29f7dc13ad';
+    access_key = 'ee74e99b578f799d5c9a96e3618326dc';
 
     api_url = 'http://api.coinlayer.com/api/' + endpoint + '?access_key=' + access_key + '&symbols=' + cripto + '&target=' +target
     const paramsObject = {

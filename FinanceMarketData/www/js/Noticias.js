@@ -1,7 +1,15 @@
 function getNews(){
     //debugger
     var accessKey = '70c98bd0229f9ae406d832b2972cc1ec';
-    var url = 'http://api.mediastack.com/v1/news?access_key=' + accessKey + '&sources=business&languages=en,pt&limit=15';
+
+    api_url = 'http://api.mediastack.com/v1/news?access_key=' + accessKey + '&sources=business&languages=en,pt&limit=15';
+    const paramsObject = {
+        url: api_url,
+      };
+      
+    const url = new URL('https://api.allorigins.win/get');
+    url.search = new URLSearchParams(paramsObject).toString();
+
     var request = new XMLHttpRequest();
     var htmlText = '';
 
@@ -12,7 +20,7 @@ function getNews(){
     request.send();
     request.onload = function(){
         if(request.status === 200){
-            var response = JSON.parse(request.response);
+            var response = JSON.parse(JSON.parse(request.response).contents);
             console.log("Responde => ", response);
 
             Object.entries(response.data).forEach(([key, value]) => {

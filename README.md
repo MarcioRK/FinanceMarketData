@@ -14,6 +14,10 @@
                         possibilitando a exibição das cotações tanto das Açõs quanto das Criptomoedas. Tudo isso, na palma de sua mão, seja no App Android, no iPhone ou iPad e 
                         até pelo Computador!
                     </h5>
+                    <h4>
+                        Demo do App no iPhone 13
+                    </h4>
+                      ![Demo iPhone 13](https://user-images.githubusercontent.com/62573210/159828184-2a881b40-0356-4ead-8c32-f2890b139a0e.gif)
                 </div>
             </div>
         </div>

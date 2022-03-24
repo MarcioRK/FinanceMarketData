@@ -3,9 +3,6 @@
 <body>
     <div data-role="page" id="pageHome" class="pageHeaderBackground">
         <div id="Tela" class="flex-container">
-            <header>
-                <h1 id="Titulo">Menu Principal</h1>
-            </header>
             <div id="Conteudo">
                 <h2 id="about-us-title">Sobre nós:</p>
                 <h5 id="about-us">Henrique Galli - RA:081190044<br>Márcio Rios - RA:081200041

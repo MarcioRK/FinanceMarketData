@@ -18,6 +18,11 @@
                         Demo do App no iPhone 13
                     </h4>
                     <img src="https://user-images.githubusercontent.com/62573210/159828184-2a881b40-0356-4ead-8c32-f2890b139a0e.gif" width="250" alt="404 image"/>
+                    <h4>
+                        Demo do App no iPad Air 4
+                    </h4>
+                                        <img src="https://user-images.githubusercontent.com/62573210/159829050-7abf238f-8b58-448b-8539-40d8fea2d7c6.gif" width="250" alt="404 image"/>
+                
                 </div>
             </div>
         </div>

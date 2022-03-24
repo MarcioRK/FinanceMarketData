@@ -23,7 +23,5 @@
                     </h4>
                                         <img src="https://user-images.githubusercontent.com/62573210/159829050-7abf238f-8b58-448b-8539-40d8fea2d7c6.gif" width="250" alt="404 image"/>
                 
-                </div>
-            </div>
-        </div>
+
 </body>
